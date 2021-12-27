@@ -12,6 +12,5 @@ Rules-Requires-Root: no
 Package: sentrypeer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: SentryPeer - SIP peer to peer honeypot for VoIP
-A distributed list of bad IP addresses and phone numbers collected via a SIP Honeypot.
+Description: SentryPeer - A distributed list of bad IP addresses and phone numbers collected via a SIP Honeypot.
 
