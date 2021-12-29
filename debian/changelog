@@ -1,3 +1,16 @@
+sentrypeer (0.0.4-1) UNRELEASED; urgency=medium
+
+  * Updated README.md copy and paste example for installation instructions from this repository
+  * Fixed memory leak in route regex matching
+  * Removed global sqlite error log callback which caused segfaults when trying to show error messages (threads)
+  * Added an index to the database to speed up searching for IP addresses
+  * Fixed a segfault when trying to search for IP address/s in an empty database due to global error log bug above
+  * Better error messages on API responses
+  * Removed some unnecessary jansson usage
+  * Dockerfile and now listed on Docker Hub
+
+ -- Gavin Henry <ghenry@sentrypeer.org>  Wed, 22 Dec 2021 14:58:53 +0000
+
 sentrypeer (0.0.3-1) UNRELEASED; urgency=medium
 
   * Added `event_uuid`, `collected_method` (passive or responsive) and `created_by_node_id` (aa uuid) columns to `honey` table
