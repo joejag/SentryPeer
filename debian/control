@@ -3,6 +3,10 @@ Section: net
 Priority: optional
 Maintainer: Gavin Henry <ghenry@sentrypeer.org>
 Build-Depends: debhelper-compat (= 13),
+	       autoconf,
+	       automake,
+	       autoconf-archive,
+	       pkg-config,
 	       libcmocka-dev,
                libosip2-dev,
 	       libsqlite3-dev,
@@ -21,14 +25,18 @@ Package: sentrypeer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, adduser
 Description: SIP peer to peer honeypot for VoIP 
- SentryPeer is a distributed list of bad IP addresses and phone numbers collected via a SIP Honeypot.
- This is basically a fraud detection tool. It lets bad actors try to make phone calls and saves the 
- IP address they came from and number they tried to call. Those details are then used to block them 
- at the service providers network and the next time a user/customer tries to call a collected number, 
- it's blocked.
+ SentryPeer is a distributed list of bad IP addresses and phone numbers 
+ collected via a SIP Honeypot.
+ This is basically a fraud detection tool. It lets bad actors try to make 
+ phone calls and saves the IP address they came from and number they 
+ tried to call. Those details are then used to block them at the service 
+ providers network and the next time a user/customer tries to call a 
+ collected number, it's blocked.
  . 
- Traditionally this data is shipped to a central place, so you don't own the data you've collected. 
- This project is all about Peer to Peer sharing of that data. The user owning the data and various 
- Service Provider / Network Provider related feeds of the data is the key bit for me. I'm sick of 
- all the services out there that keep it and sell it. If you've collected it, you should have the 
- choice to keep it and/or opt in to share it with other SentryPeer community members via p2p methods.
+ Traditionally this data is shipped to a central place, so you don't own 
+ the data you've collected. This project is all about Peer to Peer sharing 
+ of that data. The user owning the data and various Service Provider / 
+ Network Provider related feeds of the data is the key bit for me. I'm 
+ sick of all the services out there that keep it and sell it. If you've 
+ collected it, you should have the choice to keep it and/or opt in to 
+ share it with other SentryPeer community members via p2p methods.
