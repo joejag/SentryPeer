@@ -1,3 +1,10 @@
+sentrypeer (1.0.0-1) UNRELEASED; urgency=medium
+
+  * Called Number RESTful API resource live
+  * Called Numbers RESTful API resource live
+
+ -- Gavin Henry <ghenry@sentrypeer.org>  Mon, 24 Jan 2022 21:45:00 +0000
+
 sentrypeer (0.0.6-1) UNRELEASED; urgency=medium
 
   * Fix incorrect libcurl usage
